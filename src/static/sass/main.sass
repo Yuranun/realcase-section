@@ -1,0 +1,174 @@
+@import "_libs.sass"
+@import "_vars.sass"
+
+// Шрифты
+@font-face 
+  font-family: sans-serif
+  src: url(../fonts/) format("woff2")
+  src: url(../fonts/) format("woff")
+  src: url(../fonts/) format("truetype")
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: sans-serif
+  src: url(../fonts/) format("woff2")
+  src: url(../fonts/) format("woff")
+  src: url(../fonts/) format("truetype")
+  font-weight: normal
+  font-style: normal
+
+// Базовые стили
+html 
+	font-size: 16px
+
+
+body 
+	margin: 0
+	padding: 0
+	font-family: 'Montserrat', sans-serif
+
+
+button, input, a, textarea  
+	&:focus 
+		outline: none
+  
+.realcase
+  min-height: 100vh
+  background: url(../img/realcase-bg.png) top right no-repeat
+  background-size: 65rem
+  &__container
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    margin-left: 5rem
+    margin-right: 5rem
+  &__header
+    display: flex
+    flex-direction: column    
+  &__title
+    padding-top: 10rem
+    h2
+      font-family: 'Montserrat', sans-serif
+      font-size: 3rem
+      text-transform: uppercase
+      span
+        display: block
+  &__item-title
+    position: relative
+    display: flex
+    flex-direction: column
+    margin-top: 10rem
+    min-height: 20rem
+    background-image: url(../img/like.png)
+    background-size: 12rem
+    background-position: 5% 30%
+    background-repeat: no-repeat
+    font-family: 'Montserrat', sans-serif
+    &::after
+      display: block
+      position: absolute
+      content: ''
+      width: 15rem
+      height: 5rem
+      top: 20rem
+      left: 7rem
+      transform: rotateZ(45deg)
+      background-image: url(../img/arrow.png)
+      background-repeat: no-repeat
+    h3
+      margin: 0
+      font-size: 1.4rem
+      padding-top: 3rem
+      text-transform: uppercase
+    p
+      max-width: 22rem   
+  &__items
+    margin-top: 5rem
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap      
+  &__item
+    positon: relative
+    font-family: 'Montserrat', sans-serif
+    min-width: 30rem 
+    min-height: 20rem
+    background-image: url(../img/bank-building.png)
+    background-size: 12rem
+    background-position: 30% 10%
+    background-repeat: no-repeat
+    h3
+      margin: 0
+      font-size: 1.4rem
+      padding-top: 3rem
+      text-transform: uppercase
+    p
+      max-width: 22rem
+    &:nth-child(1)
+      position: relative
+      margin-left: 10rem
+      &::before
+        display: block
+        position: absolute
+        content: ''
+        width: 15rem
+        height: 5rem
+        top: 3rem
+        left: 25rem
+        transform: rotateZ(-10deg)
+        background-image: url(../img/arrow.png)
+        background-size: 8rem
+        background-repeat: no-repeat
+    &:nth-child(2)
+      position: relative
+      margin-top: 5rem
+      background-image: url(../img/ruble.png)
+      background-position: 35% 15%
+      &::before
+        display: block
+        position: absolute
+        content: ''
+        width: 15rem
+        height: 5rem
+        top: 3rem
+        left: 23rem
+        transform: rotateZ(5deg)
+        background-image: url(../img/arrow.png)
+        background-size: 8rem
+        background-repeat: no-repeat
+    &:nth-child(3)
+      margin-top: 11rem
+      background-image: url(../img/key.png)
+      background-position: 30% 25%
+    &:nth-child(4)
+      min-width: 25rem
+      margin-left: 15rem
+      background-image: none
+    &:nth-child(5)
+      min-width: 25rem
+      margin-top: 5rem
+      margin-left: 3rem
+      background-image: url(../img/signing-the-contract.png)
+      background-position: 90% 10%
+    &:nth-child(6)
+      min-width: 25rem
+      margin-top: 10rem
+      margin-left: 5rem
+      background-image: url(../img/wallet-filled-money-tool.png)
+      background-position: 70% -5%                  
+
+    h3
+      font-size: 1.6rem
+      text-transform: uppercase 
+  &__plus
+    margin-top: 2rem
+    span
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 2rem
+      height: 2rem
+      font-size: 2rem
+      font-weight: 600
+      color: #fff
+      background-color: #b29353
