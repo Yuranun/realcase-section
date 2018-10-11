@@ -103,7 +103,7 @@ button, input, a, textarea
       padding-top: 3rem
       text-transform: uppercase
     p
-      max-width: 22rem
+      max-width: 20rem
     &:nth-child(1)
       position: relative
       margin-left: 10rem
@@ -143,8 +143,20 @@ button, input, a, textarea
     &:nth-child(4)
       position: relative
       min-width: 15rem
-      margin-left: 15rem
+      margin-left: 10rem
       background-image: none
+      &::after
+        display: block
+        position: absolute
+        content: ''
+        width: 15rem
+        height: 8rem
+        top: 4.5rem
+        left: 12rem
+        transform: rotate(220deg)
+        background-image: url(../img/arrow_reverse.png)
+        background-size: 6rem
+        background-repeat: no-repeat
       &::before
         display: block
         position: absolute
@@ -160,13 +172,13 @@ button, input, a, textarea
     &:nth-child(5)
       position: relative
       min-width: 30rem
-      margin-top: 5rem
+      margin-top: 3rem
       background-image: url(../img/signing-the-contract.png)
       background-position: 55% 10%
     &:nth-child(6)
       position: relative
       min-width: 30rem
-      margin-top: 8rem
+      margin-top: 5rem
       background-image: url(../img/wallet-filled-money-tool.png)
       background-position: 70% -5%
       &::after
