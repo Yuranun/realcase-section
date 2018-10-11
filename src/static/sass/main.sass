@@ -141,21 +141,46 @@ button, input, a, textarea
       background-image: url(../img/key.png)
       background-position: 30% 25%
     &:nth-child(4)
-      min-width: 25rem
+      position: relative
+      min-width: 15rem
       margin-left: 15rem
       background-image: none
+      &::before
+        display: block
+        position: absolute
+        content: ''
+        width: 15rem
+        height: 5rem
+        top: -8rem
+        left: 15rem
+        transform: rotate(90deg)
+        background-image: url(../img/arrow.png)
+        background-size: 8rem
+        background-repeat: no-repeat
     &:nth-child(5)
-      min-width: 25rem
+      position: relative
+      min-width: 30rem
       margin-top: 5rem
-      margin-left: 3rem
       background-image: url(../img/signing-the-contract.png)
-      background-position: 90% 10%
+      background-position: 55% 10%
     &:nth-child(6)
-      min-width: 25rem
-      margin-top: 10rem
-      margin-left: 5rem
+      position: relative
+      min-width: 30rem
+      margin-top: 8rem
       background-image: url(../img/wallet-filled-money-tool.png)
-      background-position: 70% -5%                  
+      background-position: 70% -5%
+      &::after
+        display: block
+        position: absolute
+        content: ''
+        width: 15rem
+        height: 5rem
+        top: -3rem
+        left: -12rem
+        transform: rotateZ(-15deg)
+        background-image: url(../img/arrow.png)
+        background-size: 8rem
+        background-repeat: no-repeat                  
 
     h3
       font-size: 1.6rem
